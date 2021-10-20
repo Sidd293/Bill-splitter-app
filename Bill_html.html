@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="Bill_css.css">
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="card-image">	
+                <h2 class="card-heading">
+                    Bill splitter
+                </h2>
+            </div>
+            <form class="card-form">
+                <div class="input">
+                    <input type="text" class="input-field" id="amount" placeholder="Total amount" required/>
+                </div>
+                <div class="input">
+                    <input type="text" class="input-field" id="persons" placeholder="Total persons" required/>   
+                </div>
+                <div class="input">
+                    <input type="text" class="input-field" id="tip-amount" placeholder="Want to add tip ?" />
+                </div>
+                <div class="card-info">
+                    <span id="split-amount">0</span>
+                </div>
+                <div class="buttons">
+                    <div class="action">
+                        <button type="submit" class="action-button">Split</button>
+                    </div>
+                    <div class="action">
+                        <button type="reset"id="reset-button">Reset</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+<script src="Bill_js.js"></script>   
+</body>
+</html>
